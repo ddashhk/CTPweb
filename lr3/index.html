@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета для заполнения веб-дизайнеру</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Анкета для заполнения веб-дизайнеру</h1>
+    <form action="/submit_form" method="post">
+        
+        <fieldset>
+            <legend>Личная информация</legend>
+            
+            <label for="fullName">ФИО:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="dob">Дата рождения:</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+
+        <fieldset>
+            <legend>Опыт и квалификация</legend>
+            
+            <label for="portfolio">Портфолио (файл):</label>
+            <input type="file" id="portfolio" name="portfolio" accept=".pdf,.jpg,.png">
+            
+            <label>Навыки:</label>
+            <div class="skills">
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+                 <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">TypeScript</label>
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label>
+            </div>
+            
+            <label>Предпочитаемые инструменты:</label>
+            <div class="tools">
+                <input type="radio" id="figma" name="tools" value="Figma">
+                <label for="figma">Figma</label>
+                <input type="radio" id="xd" name="tools" value="Adobe XD">
+                <label for="xd">WebStorm</label>
+                <input type="radio" id="sketch" name="tools" value="Sketch">
+                <label for="sketch">Sublime</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+            
+            <label for="coverLetter">Сопроводительное письмо:</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+
+    </form>
+
+</body>
+</html>
