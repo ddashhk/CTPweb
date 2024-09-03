@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Handjet';
+    src: url('fonts/Handjet-VariableFont_ELGR,ELSH,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nerko One';
+    src: url('fonts/NerkoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arial Black';
+    src: local('Arial Black'), local('Arial-BoldMT');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e3d2f4;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    color: #000;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul li a:hover {
+    text-decoration: none;
+}
+
+p.movie-description {
+    font-size: 16px;
+    color: #444;
+    margin: 0 0 20px;
+}
+
+.lamborghini {
+    text-align: center;
+    font-family: 'Handjet', sans-serif;
+}
+
+.undercover-scam {
+    text-align: justify;
+    font-family: 'Nerko One', sans-serif;
+}
+
+.operation-fortune {
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.movie-image {
+    flex: 1;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+}
+
+.movie-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-table th, .movie-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-table th {
+    background-color: #e3d2f4; 
+    color: #333;
+}
+
+.movie-table td {
+    background-color: #fff; 
+    color: #555;
+}
+
+strong {
+    font-weight: bold;
+}
+
+b {
+    font-weight: bold;
+}
