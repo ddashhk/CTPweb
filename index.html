@@ -4,12 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Любимые фильмы</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Общие стили для страницы */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-item {
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px 25px;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .link-item:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .link-item:active {
+            background-color: #004494;
+        }
+    </style>
 </head>
 <body>
-  <a href='lr1/index.html'>Лабораторная 1</a>
-  <a href='lr2/index.html'>Лабораторная 2</a>
-  <a href='lr3/index.html'>Лабораторная 3</a>
+    <div class="container">
+        <h1>Ссылки на лабораторные работы</h1>
+        <div class="links">
+            <a href="lr1/index.html" class="link-item">Лабораторная 1</a>
+            <a href="lr2/index.html" class="link-item">Лабораторная 2</a>
+            <a href="lr3/index.html" class="link-item">Лабораторная 3</a>
+        </div>
+    </div>
 </body>
 </html>
-
