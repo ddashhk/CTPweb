@@ -1,0 +1,97 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+button {
+    margin: 50px;
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    animation: vibrate 0.1s infinite; 
+}
+
+button:hover {
+    animation: none; 
+    background-color: green; 
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    100% { transform: translateX(-2px); }
+}
+
+a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+a:hover {
+    color: green; 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: translateY(-300px); /* Высота падения */
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0); /* Восстановление после падения */
+        animation-timing-function: ease-out;
+    }
+}
+
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 1s infinite;
+}
